@@ -71,7 +71,7 @@ public class TestCreateExchangeAndQueue {
 			connection = connectionFactory.newConnection();
 			channel = connection.createChannel();
 			channel.exchangeDeclare(exchangeName, BuiltinExchangeType.DIRECT);
-			// 3rd parma exclusive: exclusive true if we are declaring an
+			// 3rd param exclusive: exclusive true if we are declaring an
 			// exclusive queue
 			// (restricted to this connection)
 			channel.queueDeclare(queueName, false, false, false, null);
@@ -347,5 +347,7 @@ public class TestCreateExchangeAndQueue {
 		}
 
 	}
+	
+
 
 }
