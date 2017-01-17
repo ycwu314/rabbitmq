@@ -85,8 +85,7 @@ public class TestConfirm {
 
 				channel.waitForConfirmsOrDie();
 
-				channel.close();
-				conn.close();
+	
 
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
@@ -128,8 +127,7 @@ public class TestConfirm {
 				boolean autoAck = true;
 				channel.basicConsume(queue, autoAck, consumer);
 
-				channel.close();
-				conn.close();
+
 
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
